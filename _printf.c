@@ -3,20 +3,15 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include "main.h"
-
 /**
  * _printf - print
  * @format: list arguments
- *
- *
  * Return: len
  */
-
 int _printf(const char *format, ...)
 {
 	int i, len = 0;
 	va_list ptr;
-
 	va_start(ptr, format);
 	if (!format)
 		exit(98);
