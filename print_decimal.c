@@ -12,18 +12,19 @@ int i = 1, len = 1, result = 0;
 unsigned int b = a;
 unsigned int d = a;
 char c;
+
 if (a < 0)
 {
 char negative = '-';
 write(1, &negative, 1);
 d = d * (-1);
-b =b * (-1);
+b = b * (-1);
 result++;
 }
 while ((b / i) >= 10)
 {
 i *= 10;
-len++;
+len ++;
 }
 result += len;
 while (len > 0)
