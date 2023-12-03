@@ -66,6 +66,7 @@ int _printf(const char *format, ...)
 			_putchar(format[i]);
 			len++;
 		}
+		i++;
 	}
 	if (len == 0)
 		return (-1);
