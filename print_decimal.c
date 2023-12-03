@@ -3,8 +3,8 @@
 #include <unistd.h>
 /**
  * print_decimal - Prints a decimal
- * @ptr: Pointer to the va_list containing the string
- * @len: Pointer to the length counter
+ * @a: Pointer to the va_list containing the string
+ * Return - len
  */
 int print_decimal(int a)
 {
