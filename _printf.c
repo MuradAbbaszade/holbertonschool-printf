@@ -27,8 +27,6 @@ int print_format(char *format, int i, va_list ptr)
 				_putchar('%');
 				len++;
 			}
-			else if (format[i + 1] == '\0')
-				continue;
 			else
 			{
 				_putchar('%');
