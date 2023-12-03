@@ -10,7 +10,7 @@
  * Return: len
  */
 
-int print_format(char *format, int i, va_list ptr)
+int print_format(const char *format, int i, va_list ptr)
 {
 	int len = 0;
 			if (format[i + 1] == 'c')
