@@ -10,7 +10,7 @@
  * Return: len
  */
 
-int print_format(char *format, int i)
+int print_format(char *format, int i, va_list ptr)
 {
 	int len = 0;
 			if (format[i + 1] == 'c')
@@ -50,7 +50,7 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			len += print_format(format, i);
+			len += print_format(format, i, ptr);
 			i++;
 		}
 		else
