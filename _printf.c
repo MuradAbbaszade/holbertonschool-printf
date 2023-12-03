@@ -4,12 +4,14 @@
 #include <stdlib.h>
 #include "main.h"
 
+
 /**
- * _printf - print
+ * print_format - print
  * @format: list arguments
+ * @i:i
+ * @ptr:va_list
  * Return: len
  */
-
 int print_format(const char *format, int i, va_list ptr)
 {
 	int len = 0;
@@ -27,6 +29,8 @@ int print_format(const char *format, int i, va_list ptr)
 				_putchar('%');
 				len++;
 			}
+			else if (format[i + 1] == '\0')
+				return (len);
 			else
 			{
 				_putchar('%');
@@ -36,6 +40,11 @@ int print_format(const char *format, int i, va_list ptr)
 	return (len);
 }
 
+/**
+ * _printf - print
+ * @format: list arguments
+ * Return: len
+ */
 int _printf(const char *format, ...)
 {
 	int i, len = 0;
