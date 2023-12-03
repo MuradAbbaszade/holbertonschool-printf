@@ -30,7 +30,7 @@ int print_format(const char *format, int i, va_list ptr)
 				len++;
 			}
 			else if (format[i + 1] == '\0')
-				break;
+				len = 0;
 			else
 			{
 				_putchar('%');
