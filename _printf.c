@@ -58,6 +58,8 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			len += print_format(format, i, ptr);
+			if (len == 0) 
+				return (len);
 		}
 		else
 		{
