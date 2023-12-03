@@ -4,7 +4,7 @@
 /**
  * print_decimal - Prints a decimal
  * @a: Pointer to the va_list containing the string
- * Return - len
+ * Return:len
  */
 int print_decimal(int a)
 {
